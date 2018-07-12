@@ -29,7 +29,7 @@ var articles = []Articles{
 
  
 
-func GetData(w http.ResponseWriter, r *http.Request) {
+func GetData(w http.ResponseWriter, r *http.Request) { //yunise- add the PostData function
 
                 json.NewEncoder(w).Encode(articles)
 
